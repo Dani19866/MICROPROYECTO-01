@@ -1,0 +1,11 @@
+/* 
+PALETA DE COLORES: 
+    BLANCO, NEGRO, 
+    VERDE, 
+    ROJO, 
+    AMARILLO
+*/
+body {
+    background-image: url('../images/main.webp');
+    width: 100%;
+}
