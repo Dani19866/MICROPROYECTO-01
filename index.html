@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <!-- class="center" -->
     <div id="controller" class="center">
 
         <!-- Menu -->
@@ -147,52 +146,24 @@
 
             <!-- Table of players -->
             <div class="gameComponent">
-                <!-- Player -->
-                <div>
-                    <h3 style="text-align: center;">TABLA DEL JUGADOR "<span id="idPlayer"></span>"</h3>
-                </div>
 
                 <!-- Table -->
-                <div style="margin: .5rem;">
-                    <table border="1">
-                        <tr>
-                            <td>12</td>
-                            <td>01</td>
-                            <td>23</td>
-                            <td>23</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>50</td>
-                            <td>33</td>
-                            <td>23</td>
-                        </tr>
-                        <tr>
-                            <td>31</td>
-                            <td>39</td>
-                            <td>10</td>
-                            <td>23</td>
-                        </tr>
-                        <tr>
-                            <td>31</td>
-                            <td>39</td>
-                            <td>10</td>
-                            <td>23</td>
-                        </tr>
-                    </table>
+                <div id="tablesPlayers" style="margin: .5rem;">
+
                 </div>
             </div>
 
             <!-- Buttons -->
             <div class="gameComponent" style="text-align: center; padding: .5rem;">
                 <button id="giveNumber" class="green_button">SORTEAR</button>
-                <button id="changePlayer" class="blue_button">CAMBIAR JUGADOR</button>
+                <button id="restart" class="yellow_button">REINICIAR</button>
+                <button id="leave" class="red_button">SALIR</button>
             </div>
 
             <!-- Historial de turnos -->
             <div class="gameComponent" style="text-align: center; padding: .5rem;">
                 <h3>Historial de partida</h3>
-                <div id="historialMovements">
+                <div>
                     <table>
                         <thead>
                             <tr>
@@ -200,7 +171,7 @@
                                 <th class="reset_table_component">NÚMERO</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="historialMovements">
                             <!-- <tr>
                                 <td class="reset_table_component">1</td>
                                 <td class="reset_table_component">23</td>
@@ -213,7 +184,7 @@
         </div>
     </div>
 
-    <script src="../javascript/main.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 
 </html>

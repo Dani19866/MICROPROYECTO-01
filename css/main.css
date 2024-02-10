@@ -19,6 +19,14 @@ body {
     /* Establece el 100% de la altura de la ventana */
 }
 
+.centerModified {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Establece el 100% de la altura de la ventana */
+}
+
 .main {
     width: 300px;
     /* Ajusta el ancho de tu div según sea necesario */
@@ -150,48 +158,62 @@ th {
     margin: 0;
 }
 
-.green_button{
+.green_button {
     display: inline-block;
     padding: 5px 10px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #3498db;
-    color: #3498db;
-    /* Color del texto */
+    border: 2px solid #2ecc71; /* Green border color */
+    color: #2ecc71; /* Green text color */
     background-color: white;
-    /* Color de fondo */
     border-radius: 4px;
-    /* Borde redondeado */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .green_button:hover {
-    background-color: #3498db;
+    background-color: #2ecc71; /* Green background color on hover */
     color: white;
-    border-color: #3498db;
+    border-color: #2ecc71; /* Green border color on hover */
 }
 
-.blue_button{
+.yellow_button {
     display: inline-block;
     padding: 5px 10px;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #3498db;
-    color: #3498db;
-    /* Color del texto */
+    border: 2px solid #f1c40f; /* Yellow border color */
+    color: #f1c40f; /* Yellow text color */
     background-color: white;
-    /* Color de fondo */
     border-radius: 4px;
-    /* Borde redondeado */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.blue_button:hover {
-    background-color: #3498db;
+.yellow_button:hover {
+    background-color: #f1c40f; /* Yellow background color on hover */
     color: white;
-    border-color: #3498db;
+    border-color: #f1c40f; /* Yellow border color on hover */
+}
+
+.red_button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #e74c3c; /* Red border color */
+    color: #e74c3c; /* Red text color */
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.red_button:hover {
+    background-color: #e74c3c; /* Red background color on hover */
+    color: white;
+    border-color: #e74c3c; /* Red border color on hover */
 }
