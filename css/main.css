@@ -1,11 +1,126 @@
-/* 
-PALETA DE COLORES: 
-    BLANCO, NEGRO, 
-    VERDE, 
-    ROJO, 
-    AMARILLO
-*/
 body {
-    background-image: url('../images/main.webp');
+    background-image: url('../images/idk.jpg');
     width: 100%;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.center {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Establece el 100% de la altura de la ventana */
+}
+
+.main {
+    width: 300px;
+    /* Ajusta el ancho de tu div según sea necesario */
+    height: 625px;
+    /* Ajusta la altura de tu div según sea necesario */
+    background-color: #fbfafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra si lo deseas */
+}
+
+.formGame label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formGame div{
+    margin-bottom: 1rem;
+}
+
+.formGame input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.buttonMenu {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    /* Color del borde */
+    color: #3498db;
+    /* Color del texto */
+    background-color: white;
+    /* Color de fondo */
+    border-radius: 4px;
+    /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.buttonMenu:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.viewHistorial {
+    color: rgb(105, 105, 255);
+}
+
+.viewHistorial:hover {
+    cursor: pointer;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+
+
+}
+
+.scoreMenu {
+    display: inline-flex;
+    align-items: center;
+}
+
+.scoreMenu:hover {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* ---------- */
+.together_components {
+    display: flex;
+}
+
+.together_components input {
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.together_components select {
+    border: 1px solid rgb(185, 185, 185);
 }
