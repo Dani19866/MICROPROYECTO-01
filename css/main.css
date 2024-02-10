@@ -36,7 +36,7 @@ body {
     margin-bottom: 5px;
 }
 
-.formGame div{
+.formGame div {
     margin-bottom: 1rem;
 }
 
@@ -81,8 +81,6 @@ body {
 .icon {
     width: 32px;
     height: 32px;
-
-
 }
 
 .scoreMenu {
@@ -93,6 +91,8 @@ body {
 .scoreMenu:hover {
     cursor: pointer;
 }
+
+/* ---------- */
 
 table {
     width: 100%;
@@ -112,7 +112,11 @@ th {
     background-color: #f2f2f2;
 }
 
-/* ---------- */
+.reset_table_component{
+    background-color: transparent;
+    border: none;
+}
+
 .together_components {
     display: flex;
 }
@@ -123,4 +127,71 @@ th {
 
 .together_components select {
     border: 1px solid rgb(185, 185, 185);
+}
+
+/* ---------- */
+.gameTitle{
+    width: 300px;
+    background-color: #fbfafa;
+    border-radius: 8px;
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gameComponent{
+    background-color: #fbfafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    margin: 1rem;
+}
+
+.gameComponent h1{
+    margin: 0;
+}
+
+.green_button{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+    /* Color del texto */
+    background-color: white;
+    /* Color de fondo */
+    border-radius: 4px;
+    /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.green_button:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.blue_button{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    color: #3498db;
+    /* Color del texto */
+    background-color: white;
+    /* Color de fondo */
+    border-radius: 4px;
+    /* Borde redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.blue_button:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
 }

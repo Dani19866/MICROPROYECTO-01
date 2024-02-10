@@ -16,127 +16,201 @@
 
 </head>
 
-<body class="center">
+<body>
+    <!-- class="center" -->
+    <div id="controller" class="center">
 
-    <!-- Menu -->
-    <div class="main inter">
-        <!-- Title -->
-        <div style="text-align: center;">
-            <h1>BINGO ONLINE</h1>
-        </div>
+        <!-- Menu -->
+        <div id="menuController" class="main inter">
+            <!-- Title -->
+            <div style="text-align: center;">
+                <h1>BINGO ONLINE</h1>
+            </div>
 
-        <!-- Register user -->
-        <div id="reg">
-            <!-- Content -->
-            <div>
-                <p class="inter">
-                    Bienvenido a BINGO ONLINE plataforma que ofrece poder jugar al famoso juego de casino bingo. Puedes
-                    jugar en la plataforma seleccionando tú nombre y cartón. Buena suerte!
-                </p>
-
+            <!-- Register user -->
+            <div id="reg">
+                <!-- Content -->
                 <div>
-                    <span id="seeHistorial" class="viewHistorial">Ver historial de partidas</span>
+                    <p class="inter">
+                        Bienvenido a BINGO ONLINE plataforma que ofrece poder jugar al famoso juego de casino bingo.
+                        Puedes
+                        jugar en la plataforma seleccionando tú nombre y cartón. Buena suerte!
+                    </p>
+
+                    <div>
+                        <span id="seeHistorial" class="viewHistorial">Ver historial de partidas</span>
+                    </div>
+
+                    <h2>Comenzar partida</h2>
+                    <form action="" id="form_game">
+                        <div class="formGame">
+
+
+                            <div>
+                                <label for="jugador1">Jugador 1:</label>
+                                <div class="together_components">
+                                    <input type="text" id="jugador1" name="jugador1" required>
+                                    <select id="tamano1" name="tamano1">
+                                        <option value="3">3x3</option>
+                                        <option value="4">4x4</option>
+                                        <option value="5">5x5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="jugador2">Jugador 2:</label>
+                                <div class="together_components">
+                                    <input type="text" id="jugador2" name="jugador2" required>
+                                    <select id="tamano2" name="tamano2">
+                                        <option value="3">3x3</option>
+                                        <option value="4">4x4</option>
+                                        <option value="5">5x5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="jugador3">Jugador 3:</label>
+                                <div class="together_components">
+                                    <input type="text" id="jugador3" name="jugador3" required>
+                                    <select id="tamano3" name="tamano3">
+                                        <option value="3">3x3</option>
+                                        <option value="4">4x4</option>
+                                        <option value="5">5x5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="jugador4">Jugador 4:</label>
+                                <div class="together_components">
+                                    <input type="text" id="jugador4" name="jugador4" required>
+                                    <select id="tamano4" name="tamano4">
+                                        <option value="3">3x3</option>
+                                        <option value="4">4x4</option>
+                                        <option value="5">5x5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div style="text-align: center;">
+                            <button type="submit" id="startGame" class="buttonMenu">EMPEZAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- See scores -->
+            <div style="display: none;" id="sco">
+                <div class="scoreMenu" id="returnMenu">
+                    <img class="icon" src="images/arrow.svg" alt="Icono SVG">
+
+                    <span>
+                        Volver
+                    </span>
                 </div>
 
-                <h2>Comenzar partida</h2>
-                <form action="" id="form_game">
-                    <div class="formGame">
-
-
-                        <div>
-                            <label for="jugador1">Jugador 1:</label>
-                            <div class="together_components">
-                                <input type="text" id="jugador1" name="jugador1" required>
-                                <select id="tamano1" name="tamano1">
-                                    <option value="3">3x3</option>
-                                    <option value="4">4x4</option>
-                                    <option value="5">5x5</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="jugador2">Jugador 2:</label>
-                            <div class="together_components">
-                                <input type="text" id="jugador2" name="jugador2" required>
-                                <select id="tamano2" name="tamano2">
-                                    <option value="3">3x3</option>
-                                    <option value="4">4x4</option>
-                                    <option value="5">5x5</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="jugador3">Jugador 3:</label>
-                            <div class="together_components">
-                                <input type="text" id="jugador3" name="jugador3" required>
-                                <select id="tamano3" name="tamano3">
-                                    <option value="3">3x3</option>
-                                    <option value="4">4x4</option>
-                                    <option value="5">5x5</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="jugador4">Jugador 4:</label>
-                            <div class="together_components">
-                                <input type="text" id="jugador4" name="jugador4" required>
-                                <select id="tamano4" name="tamano4">
-                                    <option value="3">3x3</option>
-                                    <option value="4">4x4</option>
-                                    <option value="5">5x5</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div style="text-align: center;">
-                        <button type="submit" id="startGame" class="buttonMenu">EMPEZAR</button>
-                    </div>
-                </form>
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>USUARIO</th>
+                                <th>PUNTOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Usuario 1</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Usuario 2</td>
+                                <td>85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
-        <!-- See scores -->
-        <div style="display: none;" id="sco">
-            <div class="scoreMenu" id="returnMenu">
-                <img class="icon" src="images/arrow.svg" alt="Icono SVG">
+        <!-- Game -->
+        <div id="gameController" class="inter" style="display: none;">
 
-                <span>
-                    Volver
-                </span>
+            <!-- Title -->
+            <div class="gameComponent" style="text-align: center;">
+                <h1>BINGO ONLINE</h1>
             </div>
 
-            <div>
-                <table>
-                    <thead>
+            <!-- Table of players -->
+            <div class="gameComponent">
+                <!-- Player -->
+                <div>
+                    <h3 style="text-align: center;">TABLA DEL JUGADOR "<span id="idPlayer"></span>"</h3>
+                </div>
+
+                <!-- Table -->
+                <div style="margin: .5rem;">
+                    <table border="1">
                         <tr>
-                            <th>USUARIO</th>
-                            <th>PUNTOS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Usuario 1</td>
-                            <td>100</td>
+                            <td>12</td>
+                            <td>01</td>
+                            <td>23</td>
+                            <td>23</td>
                         </tr>
                         <tr>
-                            <td>Usuario 2</td>
-                            <td>85</td>
+                            <td>25</td>
+                            <td>50</td>
+                            <td>33</td>
+                            <td>23</td>
                         </tr>
-                    </tbody>
-                </table>
+                        <tr>
+                            <td>31</td>
+                            <td>39</td>
+                            <td>10</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>39</td>
+                            <td>10</td>
+                            <td>23</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+
+            <!-- Buttons -->
+            <div class="gameComponent" style="text-align: center; padding: .5rem;">
+                <button id="giveNumber" class="green_button">SORTEAR</button>
+                <button id="changePlayer" class="blue_button">CAMBIAR JUGADOR</button>
+            </div>
+
+            <!-- Historial de turnos -->
+            <div class="gameComponent" style="text-align: center; padding: .5rem;">
+                <h3>Historial de partida</h3>
+                <div id="historialMovements">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="reset_table_component">SORTEO</th>
+                                <th class="reset_table_component">NÚMERO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td class="reset_table_component">1</td>
+                                <td class="reset_table_component">23</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
-    </div>
-
-    <!-- Game -->
-    <div>
-
     </div>
 
     <script src="../javascript/main.js"></script>
